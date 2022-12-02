@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Авторизация</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Авторизация</h1>
+    </header>
+    <hr>
+    <main class="flex flex_column">
+        <form id="auth" class="flex flex_column">
+            <div class="flex flex-row">
+                <label for="login">Логин</label>
+                <input id="login" type="text" required>
+            </div>
+            <div class="flex flex-row">
+                <label for="password">Пароль</label>
+                <input id="password" type="password" required>
+            </div>
+            <div class="flex flex-row flex_align-around">
+                <button type="reset">Отмена</button>
+                <button type="submit">Войти</button>
+            </div>
+        </form>
+
+        <section id="output"></section>
+    </main>
+
+    <script src="auth.js"></script>
+</body>
+</html>
